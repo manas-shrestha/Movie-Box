@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    android:id="@+id/linearlayout"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <fr.castorflex.android.smoothprogressbar.SmoothProgressBar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:id="@+id/smoothProgressBar"
+        app:spb_sections_count="4"
+        app:spb_color="@color/accentColor"
+        app:spb_speed="1"
+        app:spb_stroke_width="4dp"
+        app:spb_stroke_separator_length="4dp"
+        app:spb_reversed="false"
+        app:spb_mirror_mode="false"
+        app:spb_progressiveStart_activated="true"
+        app:spb_progressiveStart_speed="35.5"
+        app:spb_progressiveStop_speed="1.4" />
+
+    <android.support.v7.widget.RecyclerView
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_bar"
+        android:id="@+id/recyclerView"
+        android:layout_width="fill_parent"></android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativelayout2">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:id="@+id/abstractimage"
+            android:src="@drawable/purpleabstract"
+            android:scaleType="fitXY" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/abstractimage"
+            android:layout_marginLeft="16dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/ivforflags"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="4dp"
+
+                        android:src="@drawable/minion" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:textSize="16sp"
+                        android:gravity="center_vertical"
+                        android:text="Manas Shrestha"
+
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_below="@+id/relativelayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:id="@+id/divider"
+        android:background="#B6B6B6" />
+
+    <ListView
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/divider"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listviewsidemenu" />
+</RelativeLayout>

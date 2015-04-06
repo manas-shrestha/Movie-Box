@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:id="@+id/scrollViewProfile">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <include
+            layout="@layout/app_bar_default"
+            android:id="@+id/app_bar_actorprofile"></include>
+
+        <fr.castorflex.android.smoothprogressbar.SmoothProgressBar
+            android:layout_below="@+id/app_bar_actorprofile"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:id="@+id/smoothProgressBar"
+            app:spb_sections_count="4"
+            app:spb_color="@color/accentColor"
+            app:spb_speed="1"
+            app:spb_stroke_width="4dp"
+            app:spb_stroke_separator_length="4dp"
+            app:spb_reversed="false"
+            app:spb_mirror_mode="false"
+            app:spb_progressiveStart_activated="true"
+            app:spb_progressiveStart_speed="35.5"
+            app:spb_progressiveStop_speed="1.4" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linearlayoutprofile"
+            android:layout_below="@+id/app_bar_actorprofile"
+            android:visibility="invisible">
+
+            <LinearLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:id="@+id/linearlayout1"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:src="@drawable/forrestgump"
+                    android:layout_weight="1"
+                    android:id="@+id/ivactor"
+                    android:scaleType="fitXY" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="4dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:textColor="#212121"
+                        android:text="Born" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:id="@+id/birthplaceTV"
+                        android:textColor="#727272"
+                        android:text="NA" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:textColor="#212121"
+                        android:text="D.O.B." />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:id="@+id/birthdayTV"
+                        android:textColor="#727272"
+                        android:text="NA" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_below="@id/linearlayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:id="@+id/view1"
+                android:background="@color/colorDivider">
+
+            </View>
+
+            <LinearLayout
+                android:layout_below="@id/view1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Biography"
+                    android:textSize="16dp"
+                    android:textColor="#212121" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/biographyTV"
+                    android:textSize="12dp"
+                    android:textColor="#727272"
+                    android:text="NA" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Homepage"
+                    android:textSize="16dp"
+                    android:textColor="#212121" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/homepageTV"
+                    android:textSize="12dp"
+                    android:textColor="#727272"
+                    android:text="NA" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
