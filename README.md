@@ -14,5 +14,6 @@ Requirements<br>
  -Recycler View 'com.android.support:recyclerview-v7:21.0.+'<br>
  -<a href="http://www.w3schools.com">CircularImageView 'de.hdodenhof:circleimageview:1.2.2'</a><br>
  <br>
- <img src="http://i57.tinypic.com/ezpcox.png"/>
+
+<img src="http://i61.tinypic.com/j6ppw7.png"/>
  
