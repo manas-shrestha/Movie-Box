@@ -1,5 +1,5 @@
 # MovieApp
-MovieApp is a sample application that allows you to get information about limited number of movies listed.<br>
+MovieApp is an android application that provide access to large movie database, movie casts, in theater movies, up comming movies... <br>
 
 Requirements<br>
  -compileSdkVersion 21<br>
